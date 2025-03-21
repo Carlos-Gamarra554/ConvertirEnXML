@@ -62,6 +62,7 @@ public class Editorial {
                 return false;
             }
         }
+
         if (contadorID == 1) {
             contadorID++;
         }

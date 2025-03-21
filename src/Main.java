@@ -9,7 +9,6 @@ public class Main {
 
         toXML(editoriales);
     }
-
     public static void toXML(ArrayList<Editorial> editoriales) {
         System.out.print("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
         for (Editorial editorial : editoriales) {
