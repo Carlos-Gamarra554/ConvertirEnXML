@@ -10,14 +10,16 @@ public class Main {
         toXML(editoriales);
     }
     public static void toXML(ArrayList<Editorial> editoriales) {
-        System.out.print("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+        System.out.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+        System.out.println("<usuarios>");
         for (Editorial editorial : editoriales) {
-            System.out.println("<usuario>\n" +
-                    "   <id>" + editorial.getId_editorial() + "</id>\n" +
-                    "   <nombre>" + editorial.getNombre() + "</nombre>\n" +
-                    "   <direccion>" + editorial.getDireccion() + "</direccion>\n" +
-                    "   <telefono>" + editorial.getTelefono() + "<telefono>\n" +
-                    "</usuario>");
+            System.out.println("    <usuario>\n" +
+                    "       <id>" + editorial.getId_editorial() + "</id>\n" +
+                    "       <nombre>" + editorial.getNombre() + "</nombre>\n" +
+                    "       <direccion>" + editorial.getDireccion() + "</direccion>\n" +
+                    "       <telefono>" + editorial.getTelefono() + "<telefono>\n" +
+                    "   </usuario>");
         }
+        System.out.println("</usuarios>");
     }
 }
