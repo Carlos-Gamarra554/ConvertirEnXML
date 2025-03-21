@@ -5,7 +5,7 @@ public class Main {
         ArrayList<Editorial> editoriales = new ArrayList<Editorial>();
 
         editoriales.add(new Editorial(1, "El Mundo", "C/Román Bono Marín, 8", "698435671"));
-        editoriales.add(new Editorial(1, "El Mundo", "C/Román Bono Marín, 8", "698435671"));
+        editoriales.add(new Editorial(2, "No Solo Rol", "C/Francisco Ibáñez, 56", "294857239"));
 
         toXML(editoriales);
     }
